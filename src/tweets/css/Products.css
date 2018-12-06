@@ -1,0 +1,459 @@
+
+/*RESET CSS BEGIN*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Lato', sans-serif;
+    background:#50A7C2;
+    background-color: cover;
+    z-index: -1;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+
+}
+
+ul li,
+ol li {
+
+}
+
+
+header {
+  background: #50A7C2;
+  width: 100%;
+  position: relative;
+  height: 1.5vh;
+  padding: 0;
+}
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 5;
+  height: 10vh;
+
+}
+body.scroll header.sticky {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.nav-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  padding: 7px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: transparent;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+
+nav div {
+  color:white;
+  border-bottom: 1px solid transparent;
+  border-bottom-color: white;
+  padding-bottom: 25px;
+  padding-top:5px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  border-bottom-width: thick;
+  -webkit-transition: 0.3;
+  transition: 0.3;
+}
+
+nav ul {
+  background: transparent;
+
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 0;
+
+
+}
+
+nav ul li a {
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+nav ul li a:hover {
+  padding-bottom: 20px;
+  color: white;
+  border-bottom-color: white;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  border-bottom-width: thick;
+
+
+}
+.cover-main {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0,0,0,0.2))), url('../images/slider3.jpeg') right bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.2)), url('../images/slider3.jpeg') right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+ul#scene li.name {
+  text-align:left;
+  font-size: 40px;
+  line-height: 45px;
+  padding: 0;
+  padding-top: 50px;
+  padding-left: 120px;
+  text-transform: uppercase;
+  color: white;
+}
+
+ul#scene li.title {
+  text-align: left;
+  font-size: 15px;
+  line-height: 25px;
+  color: white;
+  padding-top: 60px;
+  padding-left: 120px;
+  margin-top: 50px;
+}
+
+ul#scene {
+  margin-top: 100px;
+
+}
+li.layer.btn.main {
+  width: 80vw;
+}
+
+
+
+
+.btn {
+  width: 100%;
+  text-align: left;
+  margin-top: 180px;
+  padding-left: 126px;
+  padding-top: 10px;
+}
+
+
+.products-btn {
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.products-btn:hover {
+  background: white;
+  color: grey;
+}
+
+.wrapper {
+  margin-top: 60px;
+  padding-top: 10px;
+}
+/* SLICK SLIDER START */
+
+
+
+
+
+/* SLICK SLIDER END */
+
+
+.masonry-grid {
+  background: white;
+  background-color: cover;
+  width: 100vw;
+  position: relative;
+  padding-top: 100px;
+
+
+}
+
+.grid {
+  padding-top: 100px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.grid-item {
+
+}
+
+
+h2.sub-title {
+  color: #50A7C2;
+  position: relative;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 34px;
+  line-height: 40px;
+  width: 188px;
+  height: 68px;
+  padding-bottom: 30px;
+  -webkit-transition: 0.3s;
+  border-bottom: 100px solid;
+  border-bottom-color: #50A7C2;
+  border-bottom-left-radius: 250px;
+  border-bottom-right-radius: 250px;
+  border-bottom-width: 10px;
+}
+
+/* FOOTER */
+footer {
+  padding: 50px;
+  display: block;
+    border: 5px solid white;
+
+}
+
+.address {
+  float:left;
+  padding-bottom: 20px;
+  color:white;
+  line-height: 10px;
+
+}
+.hours {
+  float:right;
+  padding-bottom: 20px;
+  color:white;
+  line-height: 10px;
+}
+.links {
+  color:white;
+  text-align: center;
+  display: inline-block;
+ line-height: 30px;
+}
+.links a{
+
+  font-size: 15px;
+  line-height: 22px;
+  color: white;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-left: 250px;
+
+}
+.copyright {
+  color:white;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 10px;
+
+
+
+}
